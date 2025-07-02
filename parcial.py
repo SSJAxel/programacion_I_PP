@@ -8,9 +8,8 @@ from contar_notas import contar_calificaciones
 from calcular_promedios import calcular_promedios
 from validar_genero import validar_genero
 from mostrar_todos_los_datos import mostrar_todos_los_datos
+from constantes import CANTIDAD_ESTUDIANTES,CANTIDAD_MATERIAS
 
-CANTIDAD_ESTUDIANTES = 3  # Cambio a 30 para la entrega
-CANTIDAD_MATERIAS = 2     # Cambio a 5 para la entrega
 
 datos_cargados = False
 while True:

@@ -9,7 +9,7 @@ def get_int(mensaje="Ingrese un número entero: "):
                 if c < "0" or c > "9":
                     es_numero = False
         if es_numero:
-            # Convertir a entero manualmente
+            # Converti a entero manualmente
             numero = 0
             for c in entrada:
                 numero = numero * 10 + (ord(c) - ord("0"))
