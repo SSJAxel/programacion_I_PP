@@ -1,5 +1,7 @@
+from constantes import CANTIDAD_ESTUDIANTES
+
 def ordenar_por_promedio(nombres, generos, legajos, calificaciones, promedios, descendente=True):
-    n = 30
+    n = len(promedios)  # Usar el tamaño real de la lista de promedios
     for i in range(n-1):
         for j in range(n-1-i):
             if (descendente and promedios[j] < promedios[j+1]) or (not descendente and promedios[j] > promedios[j+1]):
@@ -23,6 +25,9 @@ def ordenar_por_promedio(nombres, generos, legajos, calificaciones, promedios, d
                 aux = calificaciones[j]
                 calificaciones[j] = calificaciones[j+1]
                 calificaciones[j+1] = aux
-    # Mostrar resultados
+
+    # Devolver los datos ordenados como tu menú espera
+    datos_ordenados = []
     for i in range(n):
-        print(nombres[i], generos[i], legajos[i], calificaciones[i], promedios[i])
+        datos_ordenados.append((promedios[i], nombres[i], generos[i], legajos[i], calificaciones[i]))
+    return datos_ordenados

@@ -1,8 +1,6 @@
 #trabajo practico para el parcial 
 from import_pp import get_int 
 from cargar_datos import cargar_datos
-from mostrar_nombress import mostrar_todos_los_nombres
-from mostrar_nombress import mostrar_un_nombre
 from ordenar_prom import ordenar_por_promedio
 from ordenar_mayor import materia_mayor_promedio
 from legajo import buscar_por_legajo
@@ -10,6 +8,9 @@ from contar_notas import contar_calificaciones
 from calcular_promedios import calcular_promedios
 from validar_genero import validar_genero
 from mostrar_todos_los_datos import mostrar_todos_los_datos
+
+CANTIDAD_ESTUDIANTES = 3  # Cambia a 30 para la entrega final
+CANTIDAD_MATERIAS = 2     # Cambia a 5 para la entrega final
 
 datos_cargados = False
 while True:
@@ -66,8 +67,8 @@ while True:
                 print("Primero debe cargar los datos.")
         case 7:
             if datos_cargados:
-                materia = get_int("Ingrese el número de la materia (1 a 5): ")
-                if 1 <= materia <= 5:
+                materia = get_int(f"Ingrese el número de la materia (1 a {CANTIDAD_MATERIAS}): ")
+                if 1 <= materia <= CANTIDAD_MATERIAS:
                     conteo = contar_calificaciones(calificaciones, materia)
                     print(f"Repeticiones de cada calificación en MATERIA_{materia}:")
                     for i in range(len(conteo)):
