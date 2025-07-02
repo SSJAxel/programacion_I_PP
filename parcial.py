@@ -9,8 +9,8 @@ from calcular_promedios import calcular_promedios
 from validar_genero import validar_genero
 from mostrar_todos_los_datos import mostrar_todos_los_datos
 
-CANTIDAD_ESTUDIANTES = 3  # Cambia a 30 para la entrega final
-CANTIDAD_MATERIAS = 2     # Cambia a 5 para la entrega final
+CANTIDAD_ESTUDIANTES = 3  # Cambio a 30 para la entrega
+CANTIDAD_MATERIAS = 2     # Cambio a 5 para la entrega
 
 datos_cargados = False
 while True:

@@ -1,6 +1,6 @@
-def limpiar_espacios(palabra:str)->str:
-    lista_frase=""
-    for i in range(len(palabra)):
-        if palabra[i] != " ":
-            lista_frase+=palabra[i]
+def limpiar_espacios(palabra: str) -> str:
+    lista_frase = ""
+    for caracter in palabra:
+        if caracter != " ":
+            lista_frase += caracter
     return lista_frase
